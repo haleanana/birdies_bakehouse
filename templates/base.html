@@ -33,7 +33,25 @@
     <title>Birdie's Bakehouse</title>
     </head>
     <body>
-        <header class="container-fluid fixed-top"></header>
+        <header class="container-fluid fixed-top">
+            <div class="row">
+                <div class="col-12 col-lg-6 my-auto ">
+                    <a href="{% url 'home'%}" class="nav-link">
+                        <i class="fas fa-home"></i>         
+                    </a>        
+                </div>
+                 <div class="col-12 col-lg-4 my-auto">   
+                     <ul class="list-inline list-unstyled text-center text-right">
+                         <li class="list-inline-item dropdown">
+                            <i class="far fa-user"></i>
+                         </li>
+                         <li class="list-inline-item">
+                            <i class="fas fa-shopping-basket"></i>
+                         </li>
+                     </ul>           
+                </div>
+            </div>
+        </header>
 
         {% if messages %}
         <div class="message-container"></div>
