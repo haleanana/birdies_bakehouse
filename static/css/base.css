@@ -11,10 +11,41 @@ body{
     color: #000000 !important;
 }
 
-i {
+i , .nav-font{
     font-size: 1.5rem;
 }
 
+.icon-space-between {
+    justify-content: space-between;
+}
+
+.nav-border {
+    margin: 0 50px 0 90px;
+    border-bottom: double;
+    padding-top: 10px;
+    width: 90%;
+    color: #000000;
+}
+
+/*Bootstrap overrides*/
+
+.navbar-nav{
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.dropdown-toggle::after{
+    content:none;
+}
+
+.fixed-top{
+    padding-top: 20px;
+}
+
+/* paddings
+.list-padding {
+    padding: 0px 40px 0px 40px;
+} */
 
 /*Custom search*/
 input[type="text"],
@@ -31,6 +62,10 @@ input[type="text"]:focus,
 select.form-control:focus {
   -webkit-box-shadow: none;
   box-shadow: none;
+}
+
+input[type="text"]::placeholder{
+    text-align: center;
 }
 
 /* from Bulma */
