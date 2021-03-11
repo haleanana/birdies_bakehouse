@@ -4,11 +4,19 @@ html {
 
 body{
     color: #fff9f9;
-    font-family: 'Roboto';
+    font-family: 'Roboto' serif;
 }
+
 
 .text-black, i {
     color: #000000 !important;
+}
+
+.main-title{
+    font-family: 'Abhaya Libre', serif;
+    font-size:  .3rem;
+    color: #000000;
+    padding-top: 10px;
 }
 
 i , .nav-font{
@@ -20,11 +28,15 @@ i , .nav-font{
 }
 
 .nav-border {
-    margin: 0 50px 0 90px;
+    margin: 0;
     border-bottom: double;
     padding-top: 10px;
     width: 90%;
     color: #000000;
+}
+
+.nav-border-center {
+    justify-content: center;
 }
 
 /*Bootstrap overrides*/

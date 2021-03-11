@@ -1,0 +1,15 @@
+[
+   {
+      "pk":1,
+      "model":"products.product",
+      "fields":{
+         "sku":"pp5001340155",
+         "name":"Chocolate Cake",
+         "description":"Delicious chocolate cake for every occassion",
+         "price":30.00,
+         "category":1,
+         "image_url":"",
+         "image":""
+      }
+   },
+]
