@@ -5,8 +5,31 @@ html {
 body{
     color: #fff9f9;
     font-family: 'Roboto' serif;
+    overflow: hidden;
 }
 
+/*home page*/
+.wrapper {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.box{
+    height: 600px;
+}
+
+.mid-box {
+    background-color: #FFDAB9;
+}
+
+.left-box {
+    background-color:#99D0B5;
+}
+
+.right-box{
+    background-color:#FF7291;
+}
 
 .text-black, i {
     color: #000000 !important;
@@ -14,7 +37,7 @@ body{
 
 .main-title{
     font-family: 'Abhaya Libre', serif;
-    font-size:  .3rem;
+    font-size:  2rem;
     color: #000000;
     padding-top: 10px;
 }
@@ -103,6 +126,11 @@ input[type="text"]::placeholder{
   .container {
     max-width: 80%;
   } 
+
+  .container-fluid {
+      max-width: 90%;
+  }
+  
 }
 
 /* fixed top navbar only on medium and up */
