@@ -3,13 +3,72 @@
       "pk":1,
       "model":"products.product",
       "fields":{
-         "sku":"pp5001340155",
          "name":"Chocolate Cake",
          "description":"Delicious chocolate cake for every occassion",
          "price":30.00,
+         "category":4,
+         "image_url":"",
+         "image":""
+      }
+   },
+     {
+      "pk":2,
+      "model":"products.product",
+      "fields":{
+         "name":"Cupcakes",
+         "description":"Delicious chocolate cake for every occassion",
+         "price":3.00,
+         "category":4,
+         "image_url":"",
+         "image":""
+      }
+   },
+        {
+      "pk":3,
+      "model":"products.product",
+      "fields":{
+         "name":"Cheese Cake",
+         "description":"Delicious cheesecake for every occassion",
+         "price":20.00,
+         "category":4,
+         "image_url":"",
+         "image":""
+      }
+   },
+        {
+      "pk":4,
+      "model":"products.product",
+      "fields":{
+         "name":"Custom Birthday Cake",
+         "description":"Delicious chocolate cake for every occassion",
+         "price":60.00,
+         "category":2,
+         "image_url":"",
+         "image":""
+      }
+   },
+        {
+      "pk":5,
+      "model":"products.product",
+      "fields":{
+         "name":"Custom Wedding Cake ",
+         "description":"Delicious chocolate cake for every occassion",
+         "price":300.00,
          "category":1,
          "image_url":"",
          "image":""
       }
    },
+           {
+      "pk":6,
+      "model":"products.product",
+      "fields":{
+         "name":"Custom Graduation Cake ",
+         "description":"Delicious chocolate cake for every occassion",
+         "price":100.00,
+         "category":3,
+         "image_url":"",
+         "image":""
+      }
+   }
 ]
