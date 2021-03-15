@@ -12,9 +12,27 @@
 {% block content %}
 <div class="container">
     <div class="row">
-        <div class="col">
-            {{ products }}
-        </div>
+        {% for product in products %}
+        <div class="col-sm-4">
+            <div class="card-deck">
+                <div class="card">
+                    {% if product.image %}
+                    <a href="">
+                        <img class="card-img-top img-fluid" src="{{ product.image.url }}" alt="{{ product.name }}">
+                    </a>
+                    {% else %}
+                    <a href="">
+                        <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
+                    </a>
+                    {% endif %}
+                    <div class="card-body">
+                    <h5 class="card-title text-black">{{product.name}}</h5>
+                    <p class="card-text text-black">{{ product.description }}</p>
+                    </div>
+                </div>
+            </div>
+        </div> 
+        {% endfor %}
     </div>
 </div>
 {% endblock %}

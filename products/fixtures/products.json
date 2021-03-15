@@ -19,7 +19,7 @@
          "description":"Delicious chocolate cake for every occassion",
          "price":3.00,
          "category":4,
-         "image_url":"",
+         "image_url":"https://www.mybakingaddiction.com/wp-content/uploads/2011/10/lr-0938-700x1050.jpg.webp",
          "image":""
       }
    },
@@ -31,7 +31,7 @@
          "description":"Delicious cheesecake for every occassion",
          "price":20.00,
          "category":4,
-         "image_url":"",
+         "image_url":"https://www.mybakingaddiction.com/wp-content/uploads/2011/10/lr-0938-700x1050.jpg.webp",
          "image":""
       }
    },
@@ -43,7 +43,7 @@
          "description":"Delicious chocolate cake for every occassion",
          "price":60.00,
          "category":2,
-         "image_url":"",
+         "image_url":"https://www.mybakingaddiction.com/wp-content/uploads/2011/10/lr-0938-700x1050.jpg.webp",
          "image":""
       }
    },
@@ -55,8 +55,8 @@
          "description":"Delicious chocolate cake for every occassion",
          "price":300.00,
          "category":1,
-         "image_url":"",
-         "image":""
+         "image_url":"https://www.mybakingaddiction.com/wp-content/uploads/2011/10/lr-0938-700x1050.jpg.webp",
+         "image":"cake_right.jpeg"
       }
    },
            {
@@ -67,7 +67,7 @@
          "description":"Delicious chocolate cake for every occassion",
          "price":100.00,
          "category":3,
-         "image_url":"",
+         "image_url":"https://www.mybakingaddiction.com/wp-content/uploads/2011/10/lr-0938-700x1050.jpg.webp",
          "image":""
       }
    }
