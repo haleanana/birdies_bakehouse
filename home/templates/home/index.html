@@ -10,20 +10,25 @@
 {% endblock page_header %}
 
 {% block content %}
-<div class="row text-uppercase text-black text-center main-title">
-    <h1>Birdie's Bakehouse</h1>
-</div>
-<div class="container-fluid h-100">
-    <div class="row h-100">
-        <div class="wrapper">
-            <div class="col col-xs-12 box mx-5 left-box">
+<div class="container">
+    <h2 class="pt-4 text-center main-title">BIRDIE’S BAKEHOUSE</h2>
+    <div class="row my-3 mx-2">
+        <div class="col-md-4">
+            <div class="home-col bg-paste d-flex justify-content-center left-box">
             </div>
-            <div class="col col-xs-12  box mx-5 mid-box">
-                <div class="row">
-                    <h1 class="main-title">Lovingly made desserts for everyone</h1>
-                </div>               
+        </div>
+        <div class="col-md-4">
+            <div class="home-col bg-brown d-flex justify-content-center align-items-center mid-box">
+                <div>
+                    <h2 class="text-black">Lovingly made <br>desserts for <br> everyone</h2>
+                    <div class="text-center">
+                        <a href="{% url 'products' %}" class="btn btn-light btn-lg mt-3">ORDER HERE</a>
+                    </div>
+                </div>  
             </div>
-            <div class="col col-xs-12  box mx-5 right-box">
+        </div>
+        <div class="col-md-4">
+            <div class="home-col bg-pink d-flex justify-content-center right-box">
             </div>
         </div>
     </div>

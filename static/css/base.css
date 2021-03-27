@@ -9,6 +9,11 @@ body{
 }
 
 /*home page*/
+
+.home-col {
+  min-height: 470px;
+}
+
 .wrapper {
     display: flex;
     flex-wrap: nowrap;
