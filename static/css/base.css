@@ -5,7 +5,7 @@ html {
 body{
     color: #fff9f9;
     font-family: 'Roboto' serif;
-    overflow: hidden;
+    min-height: 100%;
 }
 
 .overlay {
@@ -103,6 +103,9 @@ i , .nav-font{
 
 /*Bootstrap overrides*/
 
+.navbar-light .navbar-nav .nav-link {
+    background-color: #fff;
+}
 .navbar-nav{
     width: 100%;
     justify-content: space-evenly;
@@ -114,6 +117,7 @@ i , .nav-font{
 
 .fixed-top{
     padding-top: 20px;
+    background: #fff;
 }
 
 /* paddings
@@ -181,8 +185,9 @@ input[type="text"]::placeholder{
         left: 0;
         z-index: 1030;
     }
-
     .header-container {
         padding-top: 164px;
+        height: 100px;
     }
+
 }
