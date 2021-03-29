@@ -103,11 +103,19 @@ i , .nav-font{
     color: #fff;
 }
 
-
 /* Bag */
 
 .text-right {
     text-align: right;
+}
+
+.float-right {
+    float: right;
+}
+
+.update-link,
+.remove-item{
+    cursor: pointer;
 }
 
 /*Bootstrap overrides*/
