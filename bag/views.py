@@ -43,19 +43,20 @@ def adjust_bag(request, item_id):
     return redirect(reverse('view_bag'))
 
 def remove_from_bag(request, item_id):
-
     """Remove the item from the shopping bag"""
     try:
         product = get_object_or_404(Product, pk=item_id)
         info = None
-
         if 'product_info' in request.POST:
             size = request.POST['product_info']
-            bag = request.session.get('bag', {})
+        bag = request.session.get('bag', {})
 
+        if size:
+            del bag[item_id]['items_by_info'][info]
+            if not bag[item_id]['items_by_info']:
+                bag.pop(item_id)
         else:
             bag.pop(item_id)
-            messages.success(request, f'Removed {product.name} from your bag!')
 
         request.session['bag'] = bag
         return HttpResponse(status=200)
