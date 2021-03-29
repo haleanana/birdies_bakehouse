@@ -104,6 +104,12 @@ i , .nav-font{
 }
 
 
+/* Bag */
+
+.text-right {
+    text-align: right;
+}
+
 /*Bootstrap overrides*/
 
 .navbar-light .navbar-nav .nav-link {
