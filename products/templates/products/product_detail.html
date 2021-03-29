@@ -94,7 +94,7 @@
             <form method="POST" action="{% url 'product_detail' product_id %}">{% csrf_token %}
                 <textarea rows="4" cols="20" name="com" id="com" class="form-control"
                     placeholder="Enter your comments here " required></textarea>
-                <input type="submit" value="Post">
+                <input type="submit" value="Post" style="margin-top: 10px;">
             </form>
             <br>
             {% endif %}
