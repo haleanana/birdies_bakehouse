@@ -165,6 +165,27 @@ input[type="text"]::placeholder{
     border:none;
 }
 
+.btn-outline-black{
+    background: #fff;
+    color:black !important;
+    border: 1px solid #000000;
+}
+
+.btn-outline-black:hover,
+.btn-outline-black:active,
+.btn-outline-black:focus {
+  background: black;
+  color: white !important;
+}
+
+.btn-outline-pink{
+  background:#FF7291;
+  color: white !important;
+  border: 1px solid #FF7291;
+  opacity: 92%;
+  transition: opacity 0.8s;
+}
+
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
