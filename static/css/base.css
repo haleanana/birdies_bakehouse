@@ -88,7 +88,12 @@ i , .nav-font{
 }
 
 .darken:hover img {
-    opacity: 0.3;
+    opacity: 0.2;
+    background: rgba(0, 0, 0, .5);
+    -moz-transition: all 1s;
+    -webkit-transition: all 1s;
+    transition: all 1s;
+
 }
 
 .product-name{
@@ -103,6 +108,12 @@ i , .nav-font{
     color: #fff;
 }
 
+
+.text-title{
+    font-size: 1.5rem;
+    position: absolute;
+    right: 10px;
+}
 /* Bag */
 
 .text-right {
@@ -116,6 +127,16 @@ i , .nav-font{
 .update-link,
 .remove-item{
     cursor: pointer;
+}
+
+.font-padding {
+    padding-top: 10px;
+    padding-left: 25px;
+}
+
+.font-padding-right{
+    padding-top: 10px;
+    padding-right: 25px;
 }
 
 /*Bootstrap overrides*/
