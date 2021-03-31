@@ -23,12 +23,12 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'f90uu^*-*hj)dyf9q-_mcv^y3(q(+pk0s2kab(*u^9-vt!hn!r'
+SECRET_KEY = os.environ.get('SECRET_KEY', '')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = 'DEVELOPMENT' in os.environ
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['birdies-bakehouse.herokuapp.com', 'localhost']
 
 
 # Application definition
@@ -120,16 +120,20 @@ WSGI_APPLICATION = 'birdies_bakehouse.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': BASE_DIR / 'db.sqlite3',
-#     }
-# }
+if 'DATABASE_URL' in os.environ:
+    DATABASES = {
+        'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
+    }
 
-DATABASES = {
-    'default': dj_database_url.parse('postgres://loimlixrzjiwox:bed9116cbe404c4ad7952076f0cc6334700a0331899b13b0fbc936b7b43467dc@ec2-34-254-69-72.eu-west-1.compute.amazonaws.com:5432/dde7fcqaoqotpg')
-}
+else: 
+
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.sqlite3',
+            'NAME': BASE_DIR / 'db.sqlite3',
+        }
+    }
+
 
 
 # Password validation
