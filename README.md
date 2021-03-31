@@ -150,7 +150,7 @@ Figma was used to create my mock ups.
 This project was built using Gitpod IDE , commited and published using GitHub.
 
 ### To run this project locally ###
-Note: You will need to create a free  <a href ="https://account.mongodb.com/account/register?n=%2Fv2%2F5f3e6174de92e37945456693&nextHash=%23metrics%2FreplicaSet%2F5f3e627682daf72308004a81%2Fexplorer%2Four_recipe%2Fsubscribers%2Ffind">MongoDB</a> account and create your own collection. 
+
 1. Follow this <a href="https://github.com/haleanana/birdies_bakehouse" target = "_blank"> link </a>
 2. Click "Clone or Download". 
 3. Copy the clone URL under the HTTPs section.
